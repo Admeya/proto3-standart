@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package my.city;
+
+import "City.proto";
+
+
+message Street {
+    string street_name = 1;
+    my.city.City city = 2;
+}
